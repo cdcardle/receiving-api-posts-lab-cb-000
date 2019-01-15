@@ -13,3 +13,17 @@
   <%= f.text_field :inventory %>
   <%= f.submit "submit" %>
 <% end %>
+
+<script type="text/javascript" charset="utf-8">
+  $(function(){
+    $('form').submit(function(e){
+      e.preventDefault();
+      var values = $(this).serialize();
+      var products = $.post('/products', values);
+
+      products.done(function(data){
+        
+      });
+    });
+  });
+</script>
