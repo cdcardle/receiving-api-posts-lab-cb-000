@@ -12,7 +12,14 @@
   <%= f.label :inventory %>
   <%= f.text_field :inventory %>
   <%= f.submit "submit" %>
-<% end %>
+<% end %><br>
+
+<div id="productResult">
+  <h2 id="productName"></h2>
+  <p id="productInventory"></p>
+  <p id="productPrice"></p>
+  <p id="productDescription"></p>
+</div>
 
 <script type="text/javascript" charset="utf-8">
   $(function(){
@@ -22,7 +29,7 @@
       var products = $.post('/products', values);
 
       products.done(function(data){
-        
+
       });
     });
   });
