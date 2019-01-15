@@ -1822,3 +1822,27 @@ Cannot render console from 68.42.76.249! Allowed networks: 127.0.0.1, ::1, 127.0
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 68.42.76.249 at 2019-01-15 15:49:01 +0000
 Cannot render console from 68.42.76.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/products/new" for 68.42.76.249 at 2019-01-15 16:11:32 +0000
+Cannot render console from 68.42.76.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (664.4ms)
+Completed 200 OK in 939ms (Views: 911.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for 68.42.76.249 at 2019-01-15 16:11:38 +0000
+Cannot render console from 68.42.76.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 73ms (Views: 72.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 68.42.76.249 at 2019-01-15 16:11:56 +0000
+Cannot render console from 68.42.76.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JGEljhMN6micQrexEQ2r150A/NN6LRkEhLI8OA2msDnMhmdV2tQM5cs8QPB0UL8FuA4gIsVCzNU+yef1y93PjQ==", "product"=>{"name"=>"universal remote", "price"=>"10.00", "description"=>"A remote for all your devices.", "inventory"=>"59"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("name", "description", "inventory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "universal remote"], ["description", "A remote for all your devices."], ["inventory", 59], ["price", 10], ["created_at", "2019-01-15 16:11:56.533494"], ["updated_at", "2019-01-15 16:11:56.533494"]]
+  [1m[35m (4.4ms)[0m  commit transaction
