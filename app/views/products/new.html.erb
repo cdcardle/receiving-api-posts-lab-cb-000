@@ -29,10 +29,10 @@
       var products = $.post('/products', values);
 
       products.done(function(data){
-        $('#productName').text(data["name"])
-        $('#productInventory').text(data["inventory"])
-        $('#productPrice').text(data["price"])
-        $('#productDescription').text(data["description"])
+        $('#productName').text(data["name"]);
+        $('#productInventory').text(data["inventory"]);
+        $('#productPrice').text(data["price"]);
+        $('#productDescription').text(data["description"]);
       });
     });
   });
